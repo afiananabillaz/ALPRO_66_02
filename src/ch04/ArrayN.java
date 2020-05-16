@@ -8,11 +8,13 @@ public class ArrayN {
         System.out.print("Jumlah angka-angka di dalam array = ");
         for (int x = 0; x < nilai.length; x++) {
             jumlah += nilai[x];
-        }
-        System.out.println(jumlah+" ");
-        System.out.print("Seluruh angka sebelumnya = ");
-        for (int x = 0; x < nilai.length; x++) {
-            System.out.print(nilai[x]+" ");
+
+            System.out.print(jumlah + " ");
+            System.out.print("Seluruh angka sebelumnya = ");
+            for (int y = 0; y < x; y++) {
+                System.out.print(nilai[y] + "+");
+            }
+            System.out.println(nilai[x] + " ");
         }
     }
 }
